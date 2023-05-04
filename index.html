@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task List</h1>
+    <div class="task-form-container">
+      <form id="task-form">
+        <label for="task-name">Task Name</label>
+        <input type="text" id="task-name" name="task-name" required />
+        <br />
+
+        <label for="task-start-time">Start Time</label>
+        <input type="time" id="task-start-time" name="task-start-time" required />
+        <br />
+
+        <label for="task-end-time">End Time</label>
+        <input type="time" id="task-end-time" name="task-end-time" required />
+        <br />
+
+        <button type="submit">Add Task</button>
+      </form>
+      <div class="time-remaining-container">
+        <p>Time Remaining: <span id="time-remaining">24:00</span></p>
+      </div>
+    </div>
+
+    <table id="task-table">
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Time</th>
+          <th>Duration</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="task-table-body"></tbody>
+    </table>
+  </div>
+</body>
+    <script src="script.js"></script>
+</html>
